@@ -1,7 +1,4 @@
 # robots.txt für kaydietrich.de
-# Steuert, welche Seiten von Suchmaschinen gecrawlt werden dürfen
-
-# Alle Bots erlaubt
 User-agent: *
 Allow: /
 

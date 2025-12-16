@@ -23,7 +23,8 @@ export default defineConfig({
           return {
             ...baseContext,
             pageTitle: 'Kay Dietrich - Compliance-Software für deutsche KMUs',
-            pageDescription: 'E-Rechnung-Setup, NIS2-Beratung und Digitalisierungs-Lösungen für deutsche KMUs.',
+            pageDescription: 'Individuelle Compliance-Lösungen: E-Rechnung, NIS2-Beratung, Digitalisierung mit Django & Angular. Persönlich, transparent, ohne Agentur-Overhead.',
+            canonicalUrl: 'https://kaydietrich.de',
             hero: loadContent('hero.json'),
             services: loadContent('services.json'),
             projects: loadContent('projects.json'),
@@ -37,7 +38,8 @@ export default defineConfig({
           return {
             ...baseContext,
             pageTitle: 'Datenschutzerklärung - Kay Dietrich',
-            pageDescription: 'Datenschutzerklärung von Kay Dietrich',
+            pageDescription: 'Informationen zur Verarbeitung personenbezogener Daten auf kaydietrich.de gemäß DSGVO.',
+            canonicalUrl: 'https://kaydietrich.de/privacy',
             privacy: loadContent('privacy.json')
           }
         }
@@ -46,7 +48,8 @@ export default defineConfig({
           return {
             ...baseContext,
             pageTitle: 'Impressum - Kay Dietrich',
-            pageDescription: 'Impressum und rechtliche Informationen',
+            pageDescription: 'Angaben gemäß § 5 TMG: Kay Dietrich, Fachinformatiker für Anwendungsentwicklung, Kirchgellersen.',
+            canonicalUrl: 'https://kaydietrich.de/imprint',
             imprint: loadContent('imprint.json')
           }
         }
