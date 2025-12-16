@@ -1,10 +1,9 @@
-/* Tailwind Base Imports */
-/* stylelint-disable-next-line at-rule-no-unknown */
+@import './fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import './fonts.css';
 
 /* Base Layer - Global Styles */
 @layer base {
