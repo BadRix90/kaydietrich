@@ -1,0 +1,53 @@
+{
+  "pageTitle": "Datenschutzerklärung",
+  "backToHome": "Zurück zur Startseite",
+  "sections": [
+    {
+      "title": "1. Datenschutz auf einen Blick",
+      "subsections": [
+        {
+          "subtitle": "Allgemeine Hinweise",
+          "content": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können."
+        },
+        {
+          "subtitle": "Datenerfassung auf dieser Website",
+          "content": "Wer ist verantwortlich? Die Datenverarbeitung erfolgt durch den Websitebetreiber. Wie erfassen wir Ihre Daten? Durch Ihre Mitteilung oder automatisch beim Besuch. Wofür nutzen wir Ihre Daten? Für fehlerfreie Bereitstellung und Analyse."
+        }
+      ]
+    },
+    {
+      "title": "2. Hosting",
+      "content": "Diese Website wird extern gehostet. Die personenbezogenen Daten werden auf Servern des Hosters gespeichert. Das externe Hosting erfolgt im Interesse einer sicheren Bereitstellung (Art. 6 Abs. 1 lit. f DSGVO)."
+    },
+    {
+      "title": "3. Allgemeine Hinweise und Pflichtinformationen",
+      "subsections": [
+        {
+          "subtitle": "Hinweis zur verantwortlichen Stelle",
+          "content": "Kay Dietrich, [Straße], [PLZ] Kirchgellersen, E-Mail: kontakt@kaydietrich.de"
+        },
+        {
+          "subtitle": "Speicherdauer",
+          "content": "Ihre Daten verbleiben bei uns, bis der Zweck entfällt oder Sie die Löschung verlangen."
+        }
+      ]
+    },
+    {
+      "title": "4. Datenerfassung auf dieser Website",
+      "subsections": [
+        {
+          "subtitle": "Kontaktformular",
+          "content": "Ihre Angaben werden zwecks Bearbeitung gespeichert (Art. 6 Abs. 1 lit. b DSGVO). Die Daten verbleiben bis zur Löschungsaufforderung."
+        },
+        {
+          "subtitle": "Server-Log-Dateien",
+          "content": "Automatische Erfassung von: Browsertyp, Betriebssystem, Referrer URL, Hostname, Uhrzeit, IP-Adresse (Art. 6 Abs. 1 lit. f DSGVO)."
+        }
+      ]
+    },
+    {
+      "title": "5. Ihre Rechte",
+      "content": "Sie haben Rechte auf Auskunft, Berichtigung, Löschung und Widerruf. Beschwerderecht bei der Aufsichtsbehörde."
+    }
+  ]
+}

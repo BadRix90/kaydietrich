@@ -1,0 +1,25 @@
+<main id="main-content" class="pt-32 pb-16">
+  <div class="container-custom max-w-4xl">
+    
+    <h1 class="text-4xl md:text-5xl font-bold mb-8">{{imprint.pageTitle}}</h1>
+    
+    <div class="prose prose-lg max-w-none space-y-8">
+      {{#each imprint.sections}}
+      <section>
+        <h2 class="text-2xl font-bold mb-4">{{title}}</h2>
+        <p class="text-text-secondary leading-relaxed">{{{content}}}</p>
+      </section>
+      {{/each}}
+    </div>
+    
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <a href="/" class="btn-primary inline-flex items-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+        </svg>
+        {{imprint.backToHome}}
+      </a>
+    </div>
+    
+  </div>
+</main>

@@ -37,7 +37,8 @@ export default defineConfig({
           return {
             ...baseContext,
             pageTitle: 'Datenschutzerklärung - Kay Dietrich',
-            pageDescription: 'Datenschutzerklärung von Kay Dietrich'
+            pageDescription: 'Datenschutzerklärung von Kay Dietrich',
+            privacy: loadContent('privacy.json')
           }
         }
 
@@ -45,7 +46,8 @@ export default defineConfig({
           return {
             ...baseContext,
             pageTitle: 'Impressum - Kay Dietrich',
-            pageDescription: 'Impressum und rechtliche Informationen'
+            pageDescription: 'Impressum und rechtliche Informationen',
+            imprint: loadContent('imprint.json')
           }
         }
 
@@ -53,12 +55,12 @@ export default defineConfig({
       }
     })
   ],
-  
+
   server: {
     port: 3000,
     open: true
   },
-  
+
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
