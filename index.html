@@ -22,7 +22,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/src/styles/main.css">
 </head>
-<body class="bg-background text-text">
+<body class="bg-white text-text">
   
   <!-- Skip to Content Link für Barrierefreiheit -->
   <a href="#main-content" class="skip-to-content">
@@ -30,7 +30,7 @@
   </a>
   
   <!-- Header / Navigation -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200">
+  <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-gray-200" data-header>
     <nav class="container-custom py-4" aria-label="Hauptnavigation">
       <div class="flex items-center justify-between">
         
@@ -41,15 +41,16 @@
         
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex items-center gap-8">
-          <li><a href="#leistungen" class="hover:text-primary transition-colors">Leistungen</a></li>
-          <li><a href="#projekte" class="hover:text-primary transition-colors">Projekte</a></li>
-          <li><a href="#ueber-mich" class="hover:text-primary transition-colors">Über mich</a></li>
+          <li><a href="#leistungen" class="hover:text-primary transition-colors font-medium">Leistungen</a></li>
+          <li><a href="#projekte" class="hover:text-primary transition-colors font-medium">Projekte</a></li>
+          <li><a href="#ueber-mich" class="hover:text-primary transition-colors font-medium">Über mich</a></li>
+          <li><a href="#trust" class="hover:text-primary transition-colors font-medium">Sicherheit</a></li>
           <li><a href="#kontakt" class="btn-primary">Kontakt</a></li>
         </ul>
         
         <!-- Mobile Menu Button -->
         <button 
-          class="md:hidden p-2"
+          class="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
           data-mobile-menu
           aria-label="Menü öffnen"
           aria-expanded="false"
@@ -63,9 +64,10 @@
       <!-- Mobile Navigation -->
       <div class="hidden md:hidden mt-4" data-mobile-menu-content>
         <ul class="flex flex-col gap-4">
-          <li><a href="#leistungen" class="block py-2 hover:text-primary transition-colors">Leistungen</a></li>
-          <li><a href="#projekte" class="block py-2 hover:text-primary transition-colors">Projekte</a></li>
-          <li><a href="#ueber-mich" class="block py-2 hover:text-primary transition-colors">Über mich</a></li>
+          <li><a href="#leistungen" class="block py-2 hover:text-primary transition-colors font-medium">Leistungen</a></li>
+          <li><a href="#projekte" class="block py-2 hover:text-primary transition-colors font-medium">Projekte</a></li>
+          <li><a href="#ueber-mich" class="block py-2 hover:text-primary transition-colors font-medium">Über mich</a></li>
+          <li><a href="#trust" class="block py-2 hover:text-primary transition-colors font-medium">Sicherheit</a></li>
           <li><a href="#kontakt" class="btn-primary w-full text-center">Kontakt</a></li>
         </ul>
       </div>
@@ -76,16 +78,16 @@
   <main id="main-content" class="pt-20">
     
     <!-- Hero Section -->
-    <section class="section-padding bg-gradient-to-br from-background-light to-white">
+    <section class="section-padding bg-gradient-to-br from-gray-50 to-white">
       <div class="container-custom">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           
           <!-- Hero Text -->
           <div data-aos="fade-right">
-            <h1 class="text-hero mb-6">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Compliance ohne <span class="text-gradient">Kopfschmerzen</span>
             </h1>
-            <p class="text-body text-text-secondary mb-8 max-w-xl">
+            <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-xl leading-relaxed">
               E-Rechnung-Setup, NIS2-Beratung und Digitalisierungs-Lösungen für deutsche KMUs. 
               Implementierung in 7 Tagen.
             </p>
@@ -101,23 +103,37 @@
             </div>
             
             <!-- Trust Badges -->
-            <div class="mt-8 flex items-center gap-4 text-small text-text-muted">
+            <div class="mt-8 flex flex-wrap items-center gap-4 text-sm text-text-secondary">
               <span class="flex items-center gap-2">
-                ✓ Fachinformatiker IHK
+                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Fachinformatiker IHK
               </span>
               <span class="flex items-center gap-2">
-                ✓ DSGVO-konform
+                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                DSGVO-konform
               </span>
               <span class="flex items-center gap-2">
-                ✓ 12 Jahre Erfahrung
+                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                12 Jahre Erfahrung
               </span>
             </div>
           </div>
           
-          <!-- Hero Visual Placeholder -->
+          <!-- Hero Visual -->
           <div class="hidden lg:block" data-aos="fade-left" data-aos-delay="200">
-            <div class="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center">
-              <p class="text-text-muted">Hero Visual / Dashboard Screenshot</p>
+            <div class="aspect-square bg-gradient-to-br from-primary/10 via-accent/10 to-primary/5 rounded-2xl flex items-center justify-center border border-gray-200 shadow-xl">
+              <div class="text-center p-8">
+                <svg class="w-32 h-32 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                <p class="text-text-muted font-medium">Compliance Dashboard</p>
+              </div>
             </div>
           </div>
           
@@ -125,13 +141,457 @@
       </div>
     </section>
     
-    <!-- Services Section Placeholder -->
-    <section id="leistungen" class="section-padding">
+    <!-- Services Section - Bento Box Layout -->
+    <section id="leistungen" class="section-padding bg-white">
       <div class="container-custom">
-        <h2 class="text-h1 text-center mb-12" data-aos="fade-up">Meine Leistungen</h2>
-        <p class="text-center text-text-secondary" data-aos="fade-up" data-aos-delay="100">
-          Services kommen hier...
-        </p>
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Meine Leistungen</h2>
+          <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+            Spezialisiert auf Compliance und Digitalisierung für deutsche KMUs
+          </p>
+        </div>
+        
+        <!-- Bento Grid -->
+        <div class="bento-grid" data-aos="fade-up" data-aos-delay="100">
+          
+          <!-- E-Rechnung Setup -->
+          <article class="feature-card">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold">E-Rechnung-Setup</h3>
+            <p class="text-text-secondary leading-relaxed">
+              Automatisierte E-Rechnungs-Prozesse ab 2025. Integration mit bestehenden Systemen, vollständig DSGVO-konform.
+            </p>
+            <ul class="space-y-2 text-sm text-text-secondary">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>XRechnung & ZUGFeRD-Format</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Integration in 7 Tagen</span>
+              </li>
+            </ul>
+          </article>
+          
+          <!-- NIS2 Beratung -->
+          <article class="feature-card">
+            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold">NIS2-Beratung</h3>
+            <p class="text-text-secondary leading-relaxed">
+              Vorbereitung auf die NIS2-Richtlinie. Gap-Analyse, Risikobewertung und Implementierungsplan für Ihr Unternehmen.
+            </p>
+            <ul class="space-y-2 text-sm text-text-secondary">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Compliance-Roadmap</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Lückenlose Dokumentation</span>
+              </li>
+            </ul>
+          </article>
+          
+          <!-- Digitalisierung -->
+          <article class="feature-card">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold">Digitalisierung</h3>
+            <p class="text-text-secondary leading-relaxed">
+              Maßgeschneiderte Web-Apps mit Django und Angular. Von der Konzeption bis zur Wartung – alles aus einer Hand.
+            </p>
+            <ul class="space-y-2 text-sm text-text-secondary">
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Django & Angular Expertise</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Full-Stack-Entwicklung</span>
+              </li>
+            </ul>
+          </article>
+          
+        </div>
+        
+        <!-- CTA nach Services -->
+        <div class="text-center mt-12" data-aos="fade-up">
+          <a href="#kontakt" class="btn-primary">
+            Kostenlose Erstberatung buchen
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projekte" class="section-padding bg-section-light">
+      <div class="container-custom">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Projekte & Referenzen</h2>
+          <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+            Erfolgreiche Compliance-Implementierungen für deutsche KMUs
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          
+          <!-- Project 1 -->
+          <article class="card" data-aos="fade-up">
+            <div class="mb-4">
+              <span class="badge-primary">E-Rechnung</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Automatisierte E-Rechnungsstellung</h3>
+            <p class="text-text-secondary mb-4 leading-relaxed">
+              Implementierung eines vollautomatischen E-Rechnungs-Systems für ein mittelständisches Unternehmen. 
+              Reduzierung der Bearbeitungszeit um 75%.
+            </p>
+            <div class="flex flex-wrap gap-4 text-sm font-medium">
+              <span class="text-primary">Django</span>
+              <span class="text-primary">PostgreSQL</span>
+              <span class="text-primary">XRechnung</span>
+            </div>
+          </article>
+          
+          <!-- Project 2 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <span class="badge-primary">NIS2</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">NIS2-Compliance-Roadmap</h3>
+            <p class="text-text-secondary mb-4 leading-relaxed">
+              Entwicklung einer umfassenden NIS2-Compliance-Strategie inklusive Gap-Analyse und 
+              Implementierungsplan. Audit-Vorbereitung von 6 Wochen auf 10 Tage reduziert.
+            </p>
+            <div class="flex flex-wrap gap-4 text-sm font-medium">
+              <span class="text-primary">Compliance</span>
+              <span class="text-primary">Risikomanagement</span>
+              <span class="text-primary">DSGVO</span>
+            </div>
+          </article>
+          
+          <!-- Project 3 -->
+          <article class="card" data-aos="fade-up">
+            <div class="mb-4">
+              <span class="badge-primary">Web-App</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Digitales Dokumentenmanagement</h3>
+            <p class="text-text-secondary mb-4 leading-relaxed">
+              Maßgeschneiderte Dokumentenmanagement-Lösung mit Versionierung, Zugriffskontrollen 
+              und DSGVO-konformer Archivierung.
+            </p>
+            <div class="flex flex-wrap gap-4 text-sm font-medium">
+              <span class="text-primary">Angular</span>
+              <span class="text-primary">Django REST</span>
+              <span class="text-primary">Docker</span>
+            </div>
+          </article>
+          
+          <!-- Project 4 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <span class="badge-primary">Digitalisierung</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Prozessautomatisierung</h3>
+            <p class="text-text-secondary mb-4 leading-relaxed">
+              Automatisierung manueller Geschäftsprozesse durch individuelle Web-Anwendungen. 
+              Zeitersparnis von über 20 Stunden pro Woche.
+            </p>
+            <div class="flex flex-wrap gap-4 text-sm font-medium">
+              <span class="text-primary">Python</span>
+              <span class="text-primary">Celery</span>
+              <span class="text-primary">Redis</span>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="ueber-mich" class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          
+          <!-- About Image -->
+          <div data-aos="fade-right">
+            <div class="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center border border-gray-200">
+              <svg class="w-32 h-32 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+              </svg>
+            </div>
+          </div>
+          
+          <!-- About Text -->
+          <div data-aos="fade-left">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Über mich</h2>
+            <div class="space-y-4 text-lg text-text-secondary leading-relaxed">
+              <p>
+                Ich bin Kay Dietrich, <strong class="text-text">Fachinformatiker für Anwendungsentwicklung (IHK)</strong> 
+                mit über 12 Jahren Erfahrung in der Software-Entwicklung.
+              </p>
+              <p>
+                Meine Spezialisierung liegt in der <strong class="text-text">Compliance-Software-Entwicklung</strong> 
+                für deutsche KMUs. Ich verstehe die Herausforderungen, vor denen mittelständische Unternehmen 
+                bei Themen wie E-Rechnung, NIS2 und DSGVO stehen.
+              </p>
+              <p>
+                Mit meiner Expertise in <strong class="text-text">Django, Angular und PostgreSQL</strong> entwickle 
+                ich maßgeschneiderte Lösungen, die nicht nur technisch einwandfrei funktionieren, sondern auch 
+                die spezifischen regulatorischen Anforderungen erfüllen.
+              </p>
+            </div>
+            
+            <!-- Expertise Badges -->
+            <div class="mt-8 space-y-3">
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-text font-medium">Fachinformatiker Anwendungsentwicklung (IHK)</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-text font-medium">12+ Jahre Software-Entwicklung</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-text font-medium">Spezialisierung auf deutsche KMU-Compliance</span>
+              </div>
+            </div>
+            
+            <div class="mt-8">
+              <a href="#kontakt" class="btn-primary">
+                Jetzt Kontakt aufnehmen
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Trust / Security Section -->
+    <section id="trust" class="section-padding bg-section-light">
+      <div class="container-custom">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">So schütze ich Ihre Daten</h2>
+          <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+            Datenschutz und Sicherheit stehen bei mir an erster Stelle
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- DSGVO Compliance -->
+          <article class="card" data-aos="fade-up">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">DSGVO-konform</h3>
+            <p class="text-text-secondary leading-relaxed">
+              Alle Lösungen entsprechen den Anforderungen der Datenschutz-Grundverordnung. 
+              Datenverarbeitung ausschließlich in Deutschland/EU.
+            </p>
+          </article>
+          
+          <!-- Verschlüsselung -->
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">End-to-End-Verschlüsselung</h3>
+            <p class="text-text-secondary leading-relaxed">
+              Alle Datenübertragungen werden mit modernsten Verschlüsselungsverfahren (TLS 1.3) gesichert. 
+              Datenbankeinträge werden verschlüsselt gespeichert.
+            </p>
+          </article>
+          
+          <!-- Regelmäßige Updates -->
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Regelmäßige Security-Updates</h3>
+            <p class="text-text-secondary leading-relaxed">
+              Kontinuierliche Überwachung auf Sicherheitslücken und zeitnahe Updates. 
+              Automatisierte Sicherheitsprüfungen in der Entwicklung.
+            </p>
+          </article>
+          
+          <!-- Deutsches Hosting -->
+          <article class="card" data-aos="fade-up">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Deutsches Hosting</h3>
+            <p class="text-text-secondary leading-relaxed">
+              Server-Standort ausschließlich in Deutschland. Keine US-Cloud-Acts-Risiken. 
+              Volle Datensouveränität für Ihr Unternehmen.
+            </p>
+          </article>
+          
+          <!-- Zugriffskontrollen -->
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Granulare Zugriffskontrollen</h3>
+            <p class="text-text-secondary leading-relaxed">
+              Rollenbasierte Zugriffskontrolle (RBAC) mit Audit-Logs. 
+              Jeder Datenzugriff wird protokolliert und ist nachvollziehbar.
+            </p>
+          </article>
+          
+          <!-- Backups -->
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Automatische Backups</h3>
+            <p class="text-text-secondary leading-relaxed">
+              Tägliche automatische Backups mit verschlüsselter Speicherung. 
+              Schnelle Wiederherstellung im Notfall garantiert.
+            </p>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="kontakt" class="section-padding bg-white">
+      <div class="container-custom max-w-3xl">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-4xl md:text-5xl font-bold mb-4">Kontakt aufnehmen</h2>
+          <p class="text-lg text-text-secondary">
+            Bereit für Ihr Compliance-Projekt? Lassen Sie uns sprechen.
+          </p>
+        </div>
+        
+        <!-- Contact Form -->
+        <form class="space-y-6" data-aos="fade-up" data-aos-delay="100" data-contact-form>
+          
+          <!-- Name -->
+          <div>
+            <label for="name" class="form-label">Name *</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              class="form-input" 
+              required 
+              aria-required="true"
+            >
+          </div>
+          
+          <!-- Email -->
+          <div>
+            <label for="email" class="form-label">E-Mail *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-input" 
+              required 
+              aria-required="true"
+            >
+          </div>
+          
+          <!-- Company -->
+          <div>
+            <label for="company" class="form-label">Unternehmen</label>
+            <input 
+              type="text" 
+              id="company" 
+              name="company" 
+              class="form-input"
+            >
+          </div>
+          
+          <!-- Message -->
+          <div>
+            <label for="message" class="form-label">Nachricht *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="6" 
+              class="form-input resize-none" 
+              required 
+              aria-required="true"
+            ></textarea>
+          </div>
+          
+          <!-- Privacy Checkbox -->
+          <div class="flex items-start gap-3">
+            <input 
+              type="checkbox" 
+              id="privacy" 
+              name="privacy" 
+              class="mt-1 min-w-[20px] min-h-[20px]" 
+              required 
+              aria-required="true"
+            >
+            <label for="privacy" class="text-sm text-text-secondary">
+              Ich habe die <a href="/datenschutz" class="text-primary underline hover:no-underline">Datenschutzerklärung</a> 
+              gelesen und stimme der Verarbeitung meiner Daten zu. *
+            </label>
+          </div>
+          
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="btn-primary w-full md:w-auto">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              Nachricht senden
+            </button>
+          </div>
+          
+          <!-- Success Message (hidden by default) -->
+          <div class="hidden bg-primary/10 text-primary p-4 rounded-lg text-center" data-success-message>
+            ✓ Vielen Dank für Ihre Nachricht! Ich melde mich schnellstmöglich bei Ihnen.
+          </div>
+          
+        </form>
       </div>
     </section>
     
@@ -144,35 +604,52 @@
         
         <!-- Contact -->
         <div>
-          <h3 class="text-h3 mb-4">Kay Dietrich</h3>
-          <p class="text-small text-gray-300">
+          <h3 class="text-xl font-bold mb-4">Kay Dietrich</h3>
+          <p class="text-sm text-gray-300 leading-relaxed mb-4">
             Compliance-Software-Entwicklung<br>
             Kirchgellersen, Deutschland
           </p>
+          <div class="flex items-center gap-2 text-sm text-gray-300">
+            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span>DSGVO-konform</span>
+          </div>
         </div>
         
         <!-- Quick Links -->
         <div>
-          <h3 class="text-h3 mb-4">Links</h3>
-          <ul class="space-y-2 text-small">
+          <h3 class="text-xl font-bold mb-4">Navigation</h3>
+          <ul class="space-y-2 text-sm">
             <li><a href="#leistungen" class="text-gray-300 hover:text-white transition-colors">Leistungen</a></li>
             <li><a href="#projekte" class="text-gray-300 hover:text-white transition-colors">Projekte</a></li>
             <li><a href="#ueber-mich" class="text-gray-300 hover:text-white transition-colors">Über mich</a></li>
+            <li><a href="#trust" class="text-gray-300 hover:text-white transition-colors">Datensicherheit</a></li>
+            <li><a href="#kontakt" class="text-gray-300 hover:text-white transition-colors">Kontakt</a></li>
           </ul>
         </div>
         
         <!-- Legal -->
         <div>
-          <h3 class="text-h3 mb-4">Rechtliches</h3>
-          <ul class="space-y-2 text-small">
+          <h3 class="text-xl font-bold mb-4">Rechtliches</h3>
+          <ul class="space-y-2 text-sm">
             <li><a href="/impressum" class="text-gray-300 hover:text-white transition-colors">Impressum</a></li>
             <li><a href="/datenschutz" class="text-gray-300 hover:text-white transition-colors">Datenschutz</a></li>
           </ul>
+          
+          <!-- Trust Badges in Footer -->
+          <div class="mt-6 pt-6 border-t border-gray-700">
+            <p class="text-xs text-gray-400 mb-2">Zertifizierungen:</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-gray-700 rounded text-xs">DSGVO</span>
+              <span class="px-2 py-1 bg-gray-700 rounded text-xs">IHK</span>
+            </div>
+          </div>
         </div>
         
       </div>
       
-      <div class="mt-8 pt-8 border-t border-gray-700 text-center text-small text-gray-400">
+      <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
         <p>&copy; 2025 Kay Dietrich. Alle Rechte vorbehalten.</p>
       </div>
     </div>

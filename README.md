@@ -1,41 +1,72 @@
-# Kay Dietrich - Marketing Website
+# Kay Dietrich - Compliance-Software Website
 
-Marketing-Website für Compliance-Software-Entwicklung.
+Moderne B2B-Website für Compliance-Software-Entwicklung, spezialisiert auf deutsche KMUs.
 
-## Tech-Stack
+## Features
 
-- **Vite** - Build-Tool & Dev-Server
-- **Tailwind CSS** - Utility-First CSS Framework
-- **Vanilla JavaScript** - Keine Frameworks, maximale Performance
-- **AOS** - Animate On Scroll Library
+- ✅ **Modernes Design** nach 2025/2026 B2B-Standards
+- ✅ **WCAG 2.1 AA-konform** - Volle Barrierefreiheit
+- ✅ **Responsive Design** - Optimiert für alle Geräte
+- ✅ **Performance-optimiert** - Core Web Vitals im grünen Bereich
+- ✅ **Scroll-Animationen** mit AOS (Animate On Scroll)
+- ✅ **Smart Sticky Header** - Versteckt beim Runterscrollen
+- ✅ **Bento-Box Layout** für Service-Präsentation
+- ✅ **DSGVO-konform** - Datenschutz eingebaut
 
-## Setup
+## Technologie-Stack
 
-### 1. Dependencies installieren
+- **Build-Tool**: Vite
+- **Styling**: Tailwind CSS mit Custom Design System
+- **Animationen**: AOS (Animate On Scroll)
+- **Fonts**: Inter (Google Fonts)
+- **JavaScript**: Vanilla JS (ES Modules)
+
+## Design-System
+
+### Farben
+- **Primary**: `#2563eb` (Corporate Blue) - Vertrauen & Professionalität
+- **Accent**: `#f97316` (Orange) - CTAs & Action-Elemente
+- **Text**: `#1a1a1a` - Haupttext (16:1 Kontrast)
+- **Background**: `#ffffff` / `#f8fafc` - Sauber & professionell
+
+### Typografie
+- **Font-Familie**: Inter (400, 500, 600, 700, 800)
+- **Hero**: 64px / 4rem
+- **H1**: 48px / 3rem
+- **Body**: 18px / 1.125rem
+- **Line-Height**: 1.5-1.75 für optimale Lesbarkeit
+
+### Layout
+- **Container-Breite**: 1200px max
+- **Grid-System**: CSS Grid & Flexbox
+- **Spacing**: Tailwind-Skala (4, 6, 8, 12, 16, 24px)
+- **Touch-Targets**: Minimum 44x44px (WCAG 2.2)
+
+## Installation & Entwicklung
+
+### Voraussetzungen
+- Node.js 18+ 
+- npm oder yarn
+
+### Lokale Entwicklung
 
 ```bash
+# Abhängigkeiten installieren
 npm install
-```
 
-### 2. Development Server starten
-
-```bash
+# Development-Server starten
 npm run dev
+
+# Öffne http://localhost:5173
 ```
 
-Die Website läuft auf: http://localhost:3000
-
-### 3. Production Build erstellen
+### Production Build
 
 ```bash
+# Production Build erstellen
 npm run build
-```
 
-Build-Output landet in `/dist` Ordner.
-
-### 4. Production Build testen
-
-```bash
+# Build-Vorschau
 npm run preview
 ```
 
@@ -43,71 +74,126 @@ npm run preview
 
 ```
 kaydietrich/
-├── index.html              # Entry Point
+├── index.html              # Hauptseite
+├── impressum.html          # Impressum
+├── datenschutz.html        # Datenschutzerklärung
 ├── src/
-│   ├── styles/
-│   │   └── main.css        # Tailwind + Custom Styles
-│   └── js/
-│       └── main.js         # JavaScript Initialisierung
-├── public/                 # Statische Assets (Bilder, etc.)
-├── dist/                   # Production Build (git-ignored)
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-└── postcss.config.js
+│   ├── js/
+│   │   └── main.js         # Hauptlogik (Navigation, Forms, Animationen)
+│   └── styles/
+│       └── main.css        # Tailwind + Custom Styles
+├── public/
+│   └── favicon.svg         # Favicon
+├── tailwind.config.js      # Tailwind-Konfiguration
+├── vite.config.js          # Vite-Konfiguration
+└── package.json
 ```
 
-## Code-Richtlinien
+## Sektionen
 
-### JavaScript
-- Max. 14 Zeilen pro Funktion
-- JSDoc für alle exports
-- camelCase für Funktionen/Variablen
-- kebab-case für Dateinamen
+### Hero
+- Value Proposition mit Gradient-Text
+- Dual-CTA-Buttons (Primär + Sekundär)
+- Trust Badges (Fachinformatiker IHK, DSGVO, 12 Jahre Erfahrung)
+- Dashboard-Visual Placeholder
 
-### CSS/Tailwind
-- Utility-First mit Tailwind
-- Custom Components in `/src/styles/main.css`
-- Mobile-First Approach
-- WCAG 2.1 AA Kontraste
+### Leistungen (Bento-Box)
+- E-Rechnung-Setup (XRechnung & ZUGFeRD)
+- NIS2-Beratung (Compliance-Roadmap)
+- Digitalisierung (Django & Angular)
 
-### Commits
-- Conventional Commits: `feat:`, `fix:`, `docs:`, `style:`, `refactor:`
+### Projekte
+- 4 Referenz-Projekte mit Technologie-Stack
+- Case Studies mit Ergebnissen
 
-## Farben (Brand Colors)
+### Über mich
+- Persönliche Geschichte
+- Expertise-Badges
+- 12+ Jahre Erfahrung
 
-```js
-primary: '#2563eb'    // Corporate Blue
-accent: '#f97316'     // Orange (CTAs)
-text: '#1a1a1a'       // Haupttext
-text-secondary: '#4d4d4d'
-background: '#ffffff'
-background-light: '#f8fafc'
-```
+### Trust / Sicherheit
+- DSGVO-Konformität
+- End-to-End-Verschlüsselung
+- Deutsches Hosting
+- Security-Updates
+- Granulare Zugriffskontrollen
+- Automatische Backups
+
+### Kontakt
+- Single-Column-Form mit Inline-Validation
+- Felder: Name, E-Mail, Unternehmen, Nachricht
+- DSGVO-Checkbox
+- Success-Message nach Submit
+
+## Barrierefreiheit
+
+- ✅ Skip-to-Content Link
+- ✅ Semantic HTML5
+- ✅ ARIA-Labels & Roles
+- ✅ Keyboard-Navigation
+- ✅ Focus-States mit 3:1 Kontrast
+- ✅ Farbkontraste WCAG AA (4.5:1 minimum)
+- ✅ Touch-Targets 44x44px
+- ✅ Prefers-Reduced-Motion Support
+
+## Performance-Optimierungen
+
+- Lazy-Loading für Bilder
+- Optimierte Font-Loading (display=swap)
+- Minimierte CSS/JS
+- Scroll-Throttling für Animationen
+- RequestAnimationFrame für Smooth Scrolling
+
+## Browser-Support
+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- Mobile Browsers (iOS Safari, Chrome Mobile)
 
 ## Deployment
 
-### Netlify (empfohlen)
+Die Website ist optimiert für Deployment auf:
+- Vercel
+- Netlify
+- GitHub Pages
+- Jeden Static-Hosting-Service
 
-1. Repository mit GitHub verbinden
-2. Build Command: `npm run build`
-3. Publish Directory: `dist`
-4. Deploy!
+```bash
+# Build erstellen
+npm run build
 
-### Hetzner / FTP
+# dist/ Ordner deployen
+```
 
-1. Build erstellen: `npm run build`
-2. Alle Dateien aus `/dist` hochladen
-3. Fertig!
+## Anpassungen
 
-## Performance-Ziele
+### Farben ändern
+Bearbeite `tailwind.config.js`:
+```javascript
+colors: {
+  primary: {
+    DEFAULT: '#2563eb', // Deine Farbe hier
+  }
+}
+```
 
-- ✅ LCP < 2.5s
-- ✅ INP < 200ms
-- ✅ CLS < 0.1
-- ✅ Total JS < 200KB
-- ✅ WCAG 2.1 AA konform
+### Inhalte ändern
+- Hero-Text: `index.html` Zeile 70-85
+- Services: `index.html` Zeile 140-220
+- Projekte: `index.html` Zeile 230-310
 
-## Support
+### Kontaktdaten
+- Impressum: `impressum.html`
+- Datenschutz: `datenschutz.html`
+- Footer: `index.html` Zeile 600+
 
-Bei Fragen: [Deine E-Mail]
+## License
+
+© 2025 Kay Dietrich. Alle Rechte vorbehalten.
+
+## Kontakt
+
+Kay Dietrich  
+E-Mail: kontakt@kaydietrich.de  
+Website: https://kaydietrich.de

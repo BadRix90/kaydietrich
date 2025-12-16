@@ -1,59 +1,104 @@
 /* Tailwind Base Imports */
+/* stylelint-disable-next-line at-rule-no-unknown */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Google Fonts - Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 /* Base Layer - Global Styles */
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    @apply font-sans text-body text-text antialiased;
+    @apply font-sans text-base leading-relaxed text-text antialiased;
   }
-  
+
+  /* Typography Scale */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-balance;
+  }
+
   /* Barrierefreiheit: Focus States */
   *:focus-visible {
-    @apply outline-primary outline-2 outline-offset-2;
+    @apply outline-primary outline-[3px] outline-offset-2 rounded-sm;
   }
-  
+
   /* Skip to Content Link für Screenreader */
   .skip-to-content {
-    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded;
+    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary focus:text-white focus:px-6 focus:py-3 focus:rounded-lg;
+  }
+
+  /* Scroll Margin for Sticky Header */
+  :target {
+    scroll-margin-top: 100px;
   }
 }
 
 /* Components Layer - Wiederverwendbare Komponenten */
 @layer components {
-  /* Button Styles */
+  /* Button Styles - 44x44px Touch Target Minimum */
   .btn {
-    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200 min-h-[44px] min-w-[44px];
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200 min-h-[44px] inline-flex items-center justify-center gap-2;
   }
-  
+
   .btn-primary {
-    @apply btn bg-accent text-white hover:bg-accent-dark hover:scale-105 active:scale-95;
+    @apply btn bg-accent text-white hover:bg-accent/90 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg;
   }
-  
+
   .btn-secondary {
     @apply btn bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white;
   }
-  
+
   /* Container Styles */
   .container-custom {
-    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-content;
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px];
   }
-  
-  .container-wide {
-    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-wide;
-  }
-  
+
   /* Section Spacing */
   .section-padding {
-    @apply py-16 md:py-24 lg:py-32;
+    @apply py-16 md:py-24;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-white rounded-xl border border-gray-200 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Feature Card with Icon */
+  .feature-card {
+    @apply card flex flex-col gap-4;
+  }
+
+  /* Bento Grid Layout */
+  .bento-grid {
+    @apply grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  /* Form Input Styles */
+  .form-input {
+    @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors min-h-[44px];
+  }
+
+  .form-label {
+    @apply block text-sm font-semibold text-text mb-2;
+  }
+
+  /* Badge Styles */
+  .badge {
+    @apply inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary/10 text-primary;
   }
 }
 
@@ -63,10 +108,15 @@
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
-  
+
   /* Glassmorphism Effect */
   .glass {
     @apply bg-white/80 backdrop-blur-lg border border-white/20;
+  }
+
+  /* Section Background Variants */
+  .bg-section-light {
+    @apply bg-gray-50;
   }
 }
 
@@ -83,5 +133,6 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
