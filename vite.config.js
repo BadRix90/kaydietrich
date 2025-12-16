@@ -1,6 +1,12 @@
 import { defineConfig } from 'vite'
 import handlebars from 'vite-plugin-handlebars'
 import { resolve } from 'path'
+import fs from 'fs'
+
+const loadContent = (filename) => {
+  const path = resolve(__dirname, `src/content/${filename}`)
+  return JSON.parse(fs.readFileSync(path, 'utf-8'))
+}
 
 export default defineConfig({
   plugins: [
@@ -17,7 +23,13 @@ export default defineConfig({
           return {
             ...baseContext,
             pageTitle: 'Kay Dietrich - Compliance-Software für deutsche KMUs',
-            pageDescription: 'E-Rechnung-Setup, NIS2-Beratung und Digitalisierungs-Lösungen für deutsche KMUs. Implementierung in 7 Tagen.'
+            pageDescription: 'E-Rechnung-Setup, NIS2-Beratung und Digitalisierungs-Lösungen für deutsche KMUs.',
+            hero: loadContent('hero.json'),
+            services: loadContent('services.json'),
+            projects: loadContent('projects.json'),
+            about: loadContent('about.json'),
+            trust: loadContent('trust.json'),
+            contact: loadContent('contact.json')
           }
         }
 
@@ -25,7 +37,7 @@ export default defineConfig({
           return {
             ...baseContext,
             pageTitle: 'Datenschutzerklärung - Kay Dietrich',
-            pageDescription: 'Datenschutzerklärung von Kay Dietrich - Compliance-Software für deutsche KMUs'
+            pageDescription: 'Datenschutzerklärung von Kay Dietrich'
           }
         }
 
@@ -33,7 +45,7 @@ export default defineConfig({
           return {
             ...baseContext,
             pageTitle: 'Impressum - Kay Dietrich',
-            pageDescription: 'Impressum und rechtliche Informationen von Kay Dietrich - Compliance-Software für deutsche KMUs'
+            pageDescription: 'Impressum und rechtliche Informationen'
           }
         }
 

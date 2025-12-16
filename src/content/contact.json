@@ -1,0 +1,13 @@
+{
+  "sectionTitle": "Kontakt aufnehmen",
+  "sectionSubtitle": "Bereit für Ihr Compliance-Projekt? Lassen Sie uns sprechen.",
+  "form": {
+    "nameLabel": "Name",
+    "emailLabel": "E-Mail",
+    "companyLabel": "Unternehmen",
+    "messageLabel": "Nachricht",
+    "privacyText": "Ich habe die <a href=\"/privacy\" class=\"text-primary underline hover:no-underline\">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "submitButton": "Nachricht senden",
+    "successMessage": "✓ Vielen Dank für Ihre Nachricht! Ich melde mich schnellstmöglich bei Ihnen."
+  }
+}
