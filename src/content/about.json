@@ -1,14 +1,15 @@
 {
-  "sectionTitle": "Über mich",
+  "sectionTitle": "Warum ich Compliance-Software entwickle",
+  "sectionSubtitle": "Meine Mission: KMUs helfen, neue Gesetze als Chance zu nutzen",
   "paragraphs": [
-    "Ich bin Kay Dietrich, <strong>Fachinformatiker für Anwendungsentwicklung (IHK)</strong> mit über 12 Jahren Erfahrung in der Software-Entwicklung.",
-    "Meine Spezialisierung liegt in der <strong>Compliance-Software-Entwicklung</strong> für deutsche KMUs. Ich verstehe die Herausforderungen, vor denen mittelständische Unternehmen bei Themen wie E-Rechnung, NIS2 und DSGVO stehen.",
-    "Mit meiner Expertise in <strong>Django, Angular und PostgreSQL</strong> entwickle ich maßgeschneiderte Lösungen, die nicht nur technisch einwandfrei funktionieren, sondern auch die spezifischen regulatorischen Anforderungen erfüllen."
+    "Als <strong>Fachinformatiker für Anwendungsentwicklung (IHK)</strong> mit über 12 Jahren Erfahrung habe ich in Gesprächen mit Unternehmern immer wieder dasselbe gehört: Neue Gesetze wie E-Rechnung und NIS2 überfordern viele KMUs. Nicht weil die Unternehmen unfähig sind, sondern weil die Lösungen am Markt entweder überteuert oder völlig überladen sind.",
+    "Das war mein Aha-Moment: <strong>Warum nicht Compliance-Software entwickeln, die genau das macht, was KMUs brauchen?</strong> Ohne unnötige Features, ohne versteckte Kosten, ohne Agentur-Bullshit. Stattdessen: Persönlich, transparent und zu 100% auf deine Anforderungen zugeschnitten.",
+    "Ich bin gerade am Anfang meiner Selbstständigkeit – und das ist kein Nachteil, sondern eine <strong>Chance für uns beide</strong>. Du bekommst meine volle Aufmerksamkeit, faire Preise und die Flexibilität, gemeinsam Lösungen zu entwickeln, die wirklich passen. Ich setze auf <strong>Django und Angular</strong>, weil diese Technologien robust, skalierbar und perfekt für individuelle Business-Anwendungen sind."
   ],
   "badges": [
     "Fachinformatiker Anwendungsentwicklung (IHK)",
     "12+ Jahre Software-Entwicklung",
-    "Spezialisierung auf deutsche KMU-Compliance"
+    "Django & Angular Expertise"
   ],
-  "ctaText": "Jetzt Kontakt aufnehmen"
+  "ctaText": "Lass uns sprechen"
 }

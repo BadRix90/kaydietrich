@@ -1,13 +1,13 @@
 {
-  "sectionTitle": "Kontakt aufnehmen",
-  "sectionSubtitle": "Bereit für Ihr Compliance-Projekt? Lassen Sie uns sprechen.",
+  "sectionTitle": "Lass uns sprechen",
+  "sectionSubtitle": "Kostenloses Erstgespräch – unverbindlich, persönlich, auf Augenhöhe.",
   "form": {
-    "nameLabel": "Name",
+    "nameLabel": "Dein Name",
     "emailLabel": "E-Mail",
-    "companyLabel": "Unternehmen",
-    "messageLabel": "Nachricht",
+    "companyLabel": "Unternehmen (optional)",
+    "messageLabel": "Worum geht's?",
     "privacyText": "Ich habe die <a href=\"/privacy\" class=\"text-primary underline hover:no-underline\">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.",
     "submitButton": "Nachricht senden",
-    "successMessage": "✓ Vielen Dank für Ihre Nachricht! Ich melde mich schnellstmöglich bei Ihnen."
+    "successMessage": "✓ Danke für deine Nachricht! Ich melde mich innerhalb von 24 Stunden bei dir."
   }
 }

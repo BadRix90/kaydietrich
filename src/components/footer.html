@@ -1,21 +1,24 @@
 <footer class="bg-background-dark text-white py-12">
   <div class="container-custom">
     <div class="grid md:grid-cols-3 gap-8">
-      
+
       <div>
         <h3 class="text-xl font-bold mb-4">Kay Dietrich</h3>
         <p class="text-sm text-gray-300 leading-relaxed mb-4">
-          Compliance-Software-Entwicklung<br>
+          Fachinformatiker IHK<br>
+          Compliance & Digitalisierung<br>
           Kirchgellersen, Deutschland
         </p>
-        <div class="flex items-center gap-2 text-sm text-gray-300">
-          <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+        <a href="mailto:kontakt@kaydietrich.de"
+          class="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
           </svg>
-          <span>DSGVO-konform</span>
-        </div>
+          kontakt@kaydietrich.de
+        </a>
       </div>
-      
+
       <div>
         <h3 class="text-xl font-bold mb-4">Navigation</h3>
         <ul class="space-y-2 text-sm">
@@ -26,27 +29,26 @@
           <li><a href="#kontakt" class="text-gray-300 hover:text-white transition-colors">Kontakt</a></li>
         </ul>
       </div>
-      
+
       <div>
         <h3 class="text-xl font-bold mb-4">Rechtliches</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="/imprint" class="text-gray-300 hover:text-white transition-colors">Impressum</a></li>
           <li><a href="/privacy" class="text-gray-300 hover:text-white transition-colors">Datenschutz</a></li>
         </ul>
-        
+
         <div class="mt-6 pt-6 border-t border-gray-700">
-          <p class="text-xs text-gray-400 mb-2">Zertifizierungen:</p>
+          <p class="text-xs text-gray-400 mb-2">Qualifikationen:</p>
           <div class="flex flex-wrap gap-2">
-            <span class="px-2 py-1 bg-gray-700 rounded text-xs">DSGVO</span>
             <span class="px-2 py-1 bg-gray-700 rounded text-xs">IHK</span>
+            <span class="px-2 py-1 bg-gray-700 rounded text-xs">Frontend-Dev</span>
           </div>
         </div>
+
       </div>
-      
+
+      <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
+        <p>&copy; {{year}} Kay Dietrich. Alle Rechte vorbehalten.</p>
+      </div>
     </div>
-    
-    <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
-      <p>&copy; {{year}} Kay Dietrich. Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
 </footer>

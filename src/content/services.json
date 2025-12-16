@@ -1,31 +1,34 @@
 {
   "sectionTitle": "Meine Leistungen",
-  "sectionSubtitle": "Spezialisiert auf Compliance und Digitalisierung für deutsche KMUs",
-  "ctaText": "Kostenlose Erstberatung buchen",
+  "sectionSubtitle": "Pragmatische Lösungen für echte Compliance-Probleme",
   "services": [
     {
-      "title": "E-Rechnung-Setup",
-      "description": "Automatisierte E-Rechnungs-Prozesse ab 2025. Integration mit bestehenden Systemen, vollständig DSGVO-konform.",
+      "title": "E-Rechnungs-Beratung",
+      "description": "Ab 2025 wird E-Rechnung Pflicht. Ich helfe dir, die Anforderungen zu verstehen und eine Lösung zu finden, die zu deinem Unternehmen passt – ob Integration, Tool-Auswahl oder individuelle Entwicklung.",
       "features": [
-        "XRechnung & ZUGFeRD-Format",
-        "Integration in 7 Tagen"
+        "Anforderungsanalyse für dein Unternehmen",
+        "XRechnung & ZUGFeRD-Formate erklärt",
+        "Umsetzungsplan ohne Agentur-Overhead"
       ]
     },
     {
-      "title": "NIS2-Beratung",
-      "description": "Vorbereitung auf die NIS2-Richtlinie. Gap-Analyse, Risikobewertung und Implementierungsplan für Ihr Unternehmen.",
+      "title": "Digitalisierung individuell",
+      "description": "Von der Prozessanalyse bis zur fertigen Web-App. Mit Django und Angular entwickle ich maßgeschneiderte Lösungen, die genau das können, was du brauchst – ohne Baukasten-Einschränkungen.",
       "features": [
-        "Compliance-Roadmap",
-        "Lückenlose Dokumentation"
+        "Django Backend + Angular Frontend",
+        "Individuelle Business-Logik",
+        "Skalierbar und wartbar"
       ]
     },
     {
-      "title": "Digitalisierung",
-      "description": "Maßgeschneiderte Web-Apps mit Django und Angular. Von der Konzeption bis zur Wartung – alles aus einer Hand.",
+      "title": "Persönlicher Support",
+      "description": "Keine Ticket-Systeme, keine Warteschleifen. Du erreichst mich direkt, ich setze mich persönlich für dein Projekt ein und passe Lösungen an, bis sie zu 100% passen.",
       "features": [
-        "Django & Angular Expertise",
-        "Full-Stack-Entwicklung"
+        "Direkte Erreichbarkeit",
+        "Flexible Anpassungen",
+        "Transparente Preise"
       ]
     }
-  ]
+  ],
+  "ctaText": "Kostenloses Erstgespräch buchen"
 }

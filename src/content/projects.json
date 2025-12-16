@@ -1,30 +1,30 @@
 {
-  "sectionTitle": "Projekte & Referenzen",
-  "sectionSubtitle": "Erfolgreiche Compliance-Implementierungen für deutsche KMUs",
+  "sectionTitle": "Aktuelle Projekte",
+  "sectionSubtitle": "Ich baue gerade mein Portfolio auf – sei einer der Ersten!",
   "projects": [
     {
-      "badge": "E-Rechnung",
-      "title": "Automatisierte E-Rechnungsstellung",
-      "description": "Implementierung eines vollautomatischen E-Rechnungs-Systems für ein mittelständisches Unternehmen. Reduzierung der Bearbeitungszeit um 75%.",
-      "tags": ["Django", "PostgreSQL", "XRechnung"]
+      "badge": "In Entwicklung",
+      "title": "E-Rechnungs-Starter für KMUs",
+      "description": "Ein schlankes Tool zur Generierung und Validierung von XRechnung und ZUGFeRD-Formaten. Entwickelt mit Django, speziell für deutsche KMUs ohne IT-Abteilung.",
+      "tags": ["Django", "XRechnung", "ZUGFeRD"]
     },
     {
-      "badge": "NIS2",
-      "title": "NIS2-Compliance-Roadmap",
-      "description": "Entwicklung einer umfassenden NIS2-Compliance-Strategie inklusive Gap-Analyse und Implementierungsplan. Audit-Vorbereitung von 6 Wochen auf 10 Tage reduziert.",
-      "tags": ["Compliance", "Risikomanagement", "DSGVO"]
+      "badge": "Konzept",
+      "title": "Compliance-Dashboard",
+      "description": "Ein zentrales Dashboard zur Überwachung von DSGVO, E-Rechnung und weiteren Compliance-Anforderungen. Ziel: Übersichtlich, verständlich, handlungsorientiert.",
+      "tags": ["Angular", "Dashboard", "DSGVO"]
     },
     {
-      "badge": "Web-App",
-      "title": "Digitales Dokumentenmanagement",
-      "description": "Maßgeschneiderte Dokumentenmanagement-Lösung mit Versionierung, Zugriffskontrollen und DSGVO-konformer Archivierung.",
-      "tags": ["Angular", "Django REST", "Docker"]
+      "badge": "Planung",
+      "title": "NIS2-Readiness-Check",
+      "description": "Ein interaktiver Fragebogen, der KMUs zeigt, wo sie in Sachen NIS2-Richtlinie stehen und welche Schritte noch nötig sind. Kostenlos nutzbar, Umsetzung auf Anfrage.",
+      "tags": ["NIS2", "Self-Assessment", "Web-App"]
     },
     {
-      "badge": "Digitalisierung",
-      "title": "Prozessautomatisierung",
-      "description": "Automatisierung manueller Geschäftsprozesse durch individuelle Web-Anwendungen. Zeitersparnis von über 20 Stunden pro Woche.",
-      "tags": ["Python", "Celery", "Redis"]
+      "badge": "Dein Projekt?",
+      "title": "Individuelle Entwicklung",
+      "description": "Du hast ein spezifisches Problem, das keine Standard-Software löst? Lass uns darüber sprechen – gemeinsam entwickeln wir eine Lösung, die genau passt.",
+      "tags": ["Django", "Angular", "Custom"]
     }
   ]
 }

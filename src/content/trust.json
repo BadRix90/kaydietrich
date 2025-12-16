@@ -1,30 +1,30 @@
 {
-  "sectionTitle": "So schütze ich Ihre Daten",
-  "sectionSubtitle": "Datenschutz und Sicherheit stehen bei mir an erster Stelle",
+  "sectionTitle": "Technische Qualität, transparent kommuniziert",
+  "sectionSubtitle": "Was ich verspreche – und wie ich es umsetze",
   "features": [
     {
-      "title": "DSGVO-konform",
-      "description": "Alle Lösungen entsprechen den Anforderungen der Datenschutz-Grundverordnung. Datenverarbeitung ausschließlich in Deutschland/EU."
+      "title": "DSGVO-konform von Anfang an",
+      "description": "Alle Lösungen werden nach DSGVO-Prinzipien entwickelt: Datenminimierung, Transparenz, Nutzerrechte. Hosting ausschließlich in Deutschland/EU, keine US-Cloud-Anbieter."
     },
     {
-      "title": "End-to-End-Verschlüsselung",
-      "description": "Alle Datenübertragungen werden mit modernsten Verschlüsselungsverfahren (TLS 1.3) gesichert. Datenbankeinträge werden verschlüsselt gespeichert."
+      "title": "Moderner Tech-Stack",
+      "description": "Django (Python) für robuste Backends, Angular für performante Frontends. Bewährte Open-Source-Technologien statt proprietärer Vendor-Lock-ins."
     },
     {
-      "title": "Regelmäßige Security-Updates",
-      "description": "Kontinuierliche Überwachung auf Sicherheitslücken und zeitnahe Updates. Automatisierte Sicherheitsprüfungen in der Entwicklung."
+      "title": "Quellcode-Qualität",
+      "description": "Sauberer, dokumentierter Code. Automatisierte Tests für kritische Funktionen. Versionierung mit Git, damit jede Änderung nachvollziehbar bleibt."
     },
     {
-      "title": "Deutsches Hosting",
-      "description": "Server-Standort ausschließlich in Deutschland. Keine US-Cloud-Acts-Risiken. Volle Datensouveränität für Ihr Unternehmen."
+      "title": "Transparente Entwicklung",
+      "description": "Du weißt jederzeit, woran ich arbeite. Regelmäßige Updates, keine Black-Box-Entwicklung. Änderungswünsche? Kein Problem – ich passe an, bis es passt."
     },
     {
-      "title": "Granulare Zugriffskontrollen",
-      "description": "Rollenbasierte Zugriffskontrolle (RBAC) mit Audit-Logs. Jeder Datenzugriff wird protokolliert und ist nachvollziehbar."
+      "title": "Sichere Kommunikation",
+      "description": "Alle Datenübertragungen verschlüsselt (TLS 1.3), passwortgeschützte Bereiche mit modernen Hashing-Verfahren. Security-Updates zeitnah eingespielt."
     },
     {
-      "title": "Automatische Backups",
-      "description": "Tägliche automatische Backups mit verschlüsselter Speicherung. Schnelle Wiederherstellung im Notfall garantiert."
+      "title": "Ehrliche Empfehlungen",
+      "description": "Wenn eine Standard-Lösung ausreicht, sage ich das. Individuelle Entwicklung nur, wenn sie wirklich Mehrwert bringt. Keine Overengineering-Projekte."
     }
   ]
 }
