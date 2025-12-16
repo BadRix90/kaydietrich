@@ -1,0 +1,38 @@
+<header class="fixed top-0 left-0 right-0 z-50 glass border-b border-gray-200" data-header>
+  <nav class="container-custom py-4" aria-label="Hauptnavigation">
+    <div class="flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold text-primary" aria-label="Kay Dietrich - Startseite">
+        Kay Dietrich
+      </a>
+      
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="#leistungen" class="hover:text-primary transition-colors font-medium">Leistungen</a></li>
+        <li><a href="#projekte" class="hover:text-primary transition-colors font-medium">Projekte</a></li>
+        <li><a href="#ueber-mich" class="hover:text-primary transition-colors font-medium">Über mich</a></li>
+        <li><a href="#trust" class="hover:text-primary transition-colors font-medium">Sicherheit</a></li>
+        <li><a href="#kontakt" class="btn-primary">Kontakt</a></li>
+      </ul>
+      
+      <button 
+        class="md:hidden p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
+        data-mobile-menu
+        aria-label="Menü öffnen"
+        aria-expanded="false"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="hidden md:hidden mt-4" data-mobile-menu-content>
+      <ul class="flex flex-col gap-4">
+        <li><a href="#leistungen" class="block py-2 hover:text-primary transition-colors font-medium">Leistungen</a></li>
+        <li><a href="#projekte" class="block py-2 hover:text-primary transition-colors font-medium">Projekte</a></li>
+        <li><a href="#ueber-mich" class="block py-2 hover:text-primary transition-colors font-medium">Über mich</a></li>
+        <li><a href="#trust" class="block py-2 hover:text-primary transition-colors font-medium">Sicherheit</a></li>
+        <li><a href="#kontakt" class="btn-primary w-full text-center">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

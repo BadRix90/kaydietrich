@@ -1,0 +1,31 @@
+{
+  "sectionTitle": "Meine Leistungen",
+  "sectionSubtitle": "Spezialisiert auf Compliance und Digitalisierung für deutsche KMUs",
+  "ctaText": "Kostenlose Erstberatung buchen",
+  "services": [
+    {
+      "title": "E-Rechnung-Setup",
+      "description": "Automatisierte E-Rechnungs-Prozesse ab 2025. Integration mit bestehenden Systemen, vollständig DSGVO-konform.",
+      "features": [
+        "XRechnung & ZUGFeRD-Format",
+        "Integration in 7 Tagen"
+      ]
+    },
+    {
+      "title": "NIS2-Beratung",
+      "description": "Vorbereitung auf die NIS2-Richtlinie. Gap-Analyse, Risikobewertung und Implementierungsplan für Ihr Unternehmen.",
+      "features": [
+        "Compliance-Roadmap",
+        "Lückenlose Dokumentation"
+      ]
+    },
+    {
+      "title": "Digitalisierung",
+      "description": "Maßgeschneiderte Web-Apps mit Django und Angular. Von der Konzeption bis zur Wartung – alles aus einer Hand.",
+      "features": [
+        "Django & Angular Expertise",
+        "Full-Stack-Entwicklung"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<section id="projekte" class="section-padding bg-section-light">
+  <div class="container-custom">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">{{projects.sectionTitle}}</h2>
+      <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+        {{projects.sectionSubtitle}}
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      {{#each projects.projects}}
+      <article class="card" data-aos="fade-up" data-aos-delay="{{@index}}00">
+        <div class="mb-4">
+          <span class="badge-primary">{{badge}}</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">{{title}}</h3>
+        <p class="text-text-secondary mb-4 leading-relaxed">{{description}}</p>
+        <div class="flex flex-wrap gap-4 text-sm font-medium">
+          {{#each tags}}
+          <span class="text-primary">{{this}}</span>
+          {{/each}}
+        </div>
+      </article>
+      {{/each}}
+    </div>
+  </div>
+</section>

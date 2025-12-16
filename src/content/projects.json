@@ -1,0 +1,30 @@
+{
+  "sectionTitle": "Projekte & Referenzen",
+  "sectionSubtitle": "Erfolgreiche Compliance-Implementierungen für deutsche KMUs",
+  "projects": [
+    {
+      "badge": "E-Rechnung",
+      "title": "Automatisierte E-Rechnungsstellung",
+      "description": "Implementierung eines vollautomatischen E-Rechnungs-Systems für ein mittelständisches Unternehmen. Reduzierung der Bearbeitungszeit um 75%.",
+      "tags": ["Django", "PostgreSQL", "XRechnung"]
+    },
+    {
+      "badge": "NIS2",
+      "title": "NIS2-Compliance-Roadmap",
+      "description": "Entwicklung einer umfassenden NIS2-Compliance-Strategie inklusive Gap-Analyse und Implementierungsplan. Audit-Vorbereitung von 6 Wochen auf 10 Tage reduziert.",
+      "tags": ["Compliance", "Risikomanagement", "DSGVO"]
+    },
+    {
+      "badge": "Web-App",
+      "title": "Digitales Dokumentenmanagement",
+      "description": "Maßgeschneiderte Dokumentenmanagement-Lösung mit Versionierung, Zugriffskontrollen und DSGVO-konformer Archivierung.",
+      "tags": ["Angular", "Django REST", "Docker"]
+    },
+    {
+      "badge": "Digitalisierung",
+      "title": "Prozessautomatisierung",
+      "description": "Automatisierung manueller Geschäftsprozesse durch individuelle Web-Anwendungen. Zeitersparnis von über 20 Stunden pro Woche.",
+      "tags": ["Python", "Celery", "Redis"]
+    }
+  ]
+}

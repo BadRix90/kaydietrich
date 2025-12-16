@@ -1,0 +1,14 @@
+{
+  "sectionTitle": "Über mich",
+  "paragraphs": [
+    "Ich bin Kay Dietrich, <strong>Fachinformatiker für Anwendungsentwicklung (IHK)</strong> mit über 12 Jahren Erfahrung in der Software-Entwicklung.",
+    "Meine Spezialisierung liegt in der <strong>Compliance-Software-Entwicklung</strong> für deutsche KMUs. Ich verstehe die Herausforderungen, vor denen mittelständische Unternehmen bei Themen wie E-Rechnung, NIS2 und DSGVO stehen.",
+    "Mit meiner Expertise in <strong>Django, Angular und PostgreSQL</strong> entwickle ich maßgeschneiderte Lösungen, die nicht nur technisch einwandfrei funktionieren, sondern auch die spezifischen regulatorischen Anforderungen erfüllen."
+  ],
+  "badges": [
+    "Fachinformatiker Anwendungsentwicklung (IHK)",
+    "12+ Jahre Software-Entwicklung",
+    "Spezialisierung auf deutsche KMU-Compliance"
+  ],
+  "ctaText": "Jetzt Kontakt aufnehmen"
+}

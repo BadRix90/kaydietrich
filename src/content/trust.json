@@ -1,0 +1,30 @@
+{
+  "sectionTitle": "So schütze ich Ihre Daten",
+  "sectionSubtitle": "Datenschutz und Sicherheit stehen bei mir an erster Stelle",
+  "features": [
+    {
+      "title": "DSGVO-konform",
+      "description": "Alle Lösungen entsprechen den Anforderungen der Datenschutz-Grundverordnung. Datenverarbeitung ausschließlich in Deutschland/EU."
+    },
+    {
+      "title": "End-to-End-Verschlüsselung",
+      "description": "Alle Datenübertragungen werden mit modernsten Verschlüsselungsverfahren (TLS 1.3) gesichert. Datenbankeinträge werden verschlüsselt gespeichert."
+    },
+    {
+      "title": "Regelmäßige Security-Updates",
+      "description": "Kontinuierliche Überwachung auf Sicherheitslücken und zeitnahe Updates. Automatisierte Sicherheitsprüfungen in der Entwicklung."
+    },
+    {
+      "title": "Deutsches Hosting",
+      "description": "Server-Standort ausschließlich in Deutschland. Keine US-Cloud-Acts-Risiken. Volle Datensouveränität für Ihr Unternehmen."
+    },
+    {
+      "title": "Granulare Zugriffskontrollen",
+      "description": "Rollenbasierte Zugriffskontrolle (RBAC) mit Audit-Logs. Jeder Datenzugriff wird protokolliert und ist nachvollziehbar."
+    },
+    {
+      "title": "Automatische Backups",
+      "description": "Tägliche automatische Backups mit verschlüsselter Speicherung. Schnelle Wiederherstellung im Notfall garantiert."
+    }
+  ]
+}

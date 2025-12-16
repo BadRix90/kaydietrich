@@ -1,0 +1,43 @@
+<section class="section-padding bg-gradient-to-br from-gray-50 to-white">
+  <div class="container-custom">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      
+      <div data-aos="fade-right">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          {{hero.title}} <span class="text-gradient">{{hero.titleHighlight}}</span>
+        </h1>
+        <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-xl leading-relaxed">
+          {{hero.subtitle}}
+        </p>
+        
+        <div class="flex flex-wrap gap-4">
+          <a href="#kontakt" class="btn-primary">{{hero.ctaPrimary}}</a>
+          <a href="#leistungen" class="btn-secondary">{{hero.ctaSecondary}}</a>
+        </div>
+        
+        <div class="mt-8 flex flex-wrap items-center gap-4 text-sm text-text-secondary">
+          {{#each hero.badges}}
+          <span class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            {{this}}
+          </span>
+          {{/each}}
+        </div>
+      </div>
+      
+      <div class="hidden lg:block" data-aos="fade-left" data-aos-delay="200">
+        <div class="aspect-square bg-gradient-to-br from-primary/10 via-accent/10 to-primary/5 rounded-2xl flex items-center justify-center border border-gray-200 shadow-xl">
+          <div class="text-center p-8">
+            <svg class="w-32 h-32 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+            <p class="text-text-muted font-medium">Compliance Dashboard</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
