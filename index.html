@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Kay Dietrich - Compliance-Software für deutsche KMUs | E-Rechnung, NIS2, Digitalisierung</title>
+  <meta name="description" content="Compliance ohne Kopfschmerzen: E-Rechnung-Setup, NIS2-Beratung und Digitalisierungs-Lösungen für deutsche KMUs. Fachinformatiker IHK mit 12 Jahren Erfahrung.">
+  <meta name="keywords" content="E-Rechnung, NIS2, Compliance, DSGVO, Digitalisierung, Django, Angular, KMU">
+  <meta name="author" content="Kay Dietrich">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kaydietrich.de/">
+  <meta property="og:title" content="Kay Dietrich - Compliance-Software für KMUs">
+  <meta property="og:description" content="Compliance ohne Kopfschmerzen. E-Rechnung, NIS2, Digitalisierung für deutsche Unternehmen.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body class="bg-background text-text">
+  
+  <!-- Skip to Content Link für Barrierefreiheit -->
+  <a href="#main-content" class="skip-to-content">
+    Zum Hauptinhalt springen
+  </a>
+  
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200">
+    <nav class="container-custom py-4" aria-label="Hauptnavigation">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="/" class="text-2xl font-bold text-primary" aria-label="Kay Dietrich - Startseite">
+          Kay Dietrich
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center gap-8">
+          <li><a href="#leistungen" class="hover:text-primary transition-colors">Leistungen</a></li>
+          <li><a href="#projekte" class="hover:text-primary transition-colors">Projekte</a></li>
+          <li><a href="#ueber-mich" class="hover:text-primary transition-colors">Über mich</a></li>
+          <li><a href="#kontakt" class="btn-primary">Kontakt</a></li>
+        </ul>
+        
+        <!-- Mobile Menu Button -->
+        <button 
+          class="md:hidden p-2"
+          data-mobile-menu
+          aria-label="Menü öffnen"
+          aria-expanded="false"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <div class="hidden md:hidden mt-4" data-mobile-menu-content>
+        <ul class="flex flex-col gap-4">
+          <li><a href="#leistungen" class="block py-2 hover:text-primary transition-colors">Leistungen</a></li>
+          <li><a href="#projekte" class="block py-2 hover:text-primary transition-colors">Projekte</a></li>
+          <li><a href="#ueber-mich" class="block py-2 hover:text-primary transition-colors">Über mich</a></li>
+          <li><a href="#kontakt" class="btn-primary w-full text-center">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main id="main-content" class="pt-20">
+    
+    <!-- Hero Section -->
+    <section class="section-padding bg-gradient-to-br from-background-light to-white">
+      <div class="container-custom">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          
+          <!-- Hero Text -->
+          <div data-aos="fade-right">
+            <h1 class="text-hero mb-6">
+              Compliance ohne <span class="text-gradient">Kopfschmerzen</span>
+            </h1>
+            <p class="text-body text-text-secondary mb-8 max-w-xl">
+              E-Rechnung-Setup, NIS2-Beratung und Digitalisierungs-Lösungen für deutsche KMUs. 
+              Implementierung in 7 Tagen.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-4">
+              <a href="#kontakt" class="btn-primary">
+                Kostenlose Beratung buchen
+              </a>
+              <a href="#leistungen" class="btn-secondary">
+                Leistungen ansehen
+              </a>
+            </div>
+            
+            <!-- Trust Badges -->
+            <div class="mt-8 flex items-center gap-4 text-small text-text-muted">
+              <span class="flex items-center gap-2">
+                ✓ Fachinformatiker IHK
+              </span>
+              <span class="flex items-center gap-2">
+                ✓ DSGVO-konform
+              </span>
+              <span class="flex items-center gap-2">
+                ✓ 12 Jahre Erfahrung
+              </span>
+            </div>
+          </div>
+          
+          <!-- Hero Visual Placeholder -->
+          <div class="hidden lg:block" data-aos="fade-left" data-aos-delay="200">
+            <div class="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center">
+              <p class="text-text-muted">Hero Visual / Dashboard Screenshot</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services Section Placeholder -->
+    <section id="leistungen" class="section-padding">
+      <div class="container-custom">
+        <h2 class="text-h1 text-center mb-12" data-aos="fade-up">Meine Leistungen</h2>
+        <p class="text-center text-text-secondary" data-aos="fade-up" data-aos-delay="100">
+          Services kommen hier...
+        </p>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-background-dark text-white py-12">
+    <div class="container-custom">
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="text-h3 mb-4">Kay Dietrich</h3>
+          <p class="text-small text-gray-300">
+            Compliance-Software-Entwicklung<br>
+            Kirchgellersen, Deutschland
+          </p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-h3 mb-4">Links</h3>
+          <ul class="space-y-2 text-small">
+            <li><a href="#leistungen" class="text-gray-300 hover:text-white transition-colors">Leistungen</a></li>
+            <li><a href="#projekte" class="text-gray-300 hover:text-white transition-colors">Projekte</a></li>
+            <li><a href="#ueber-mich" class="text-gray-300 hover:text-white transition-colors">Über mich</a></li>
+          </ul>
+        </div>
+        
+        <!-- Legal -->
+        <div>
+          <h3 class="text-h3 mb-4">Rechtliches</h3>
+          <ul class="space-y-2 text-small">
+            <li><a href="/impressum" class="text-gray-300 hover:text-white transition-colors">Impressum</a></li>
+            <li><a href="/datenschutz" class="text-gray-300 hover:text-white transition-colors">Datenschutz</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      
+      <div class="mt-8 pt-8 border-t border-gray-700 text-center text-small text-gray-400">
+        <p>&copy; 2025 Kay Dietrich. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script type="module" src="/src/js/main.js"></script>
+  
+</body>
+</html>

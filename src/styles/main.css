@@ -1,0 +1,87 @@
+/* Tailwind Base Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Base Layer - Global Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-body text-text antialiased;
+  }
+  
+  /* Barrierefreiheit: Focus States */
+  *:focus-visible {
+    @apply outline-primary outline-2 outline-offset-2;
+  }
+  
+  /* Skip to Content Link für Screenreader */
+  .skip-to-content {
+    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded;
+  }
+}
+
+/* Components Layer - Wiederverwendbare Komponenten */
+@layer components {
+  /* Button Styles */
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200 min-h-[44px] min-w-[44px];
+  }
+  
+  .btn-primary {
+    @apply btn bg-accent text-white hover:bg-accent-dark hover:scale-105 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  
+  /* Container Styles */
+  .container-custom {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-content;
+  }
+  
+  .container-wide {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-wide;
+  }
+  
+  /* Section Spacing */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+}
+
+/* Utilities Layer - Custom Utilities */
+@layer utilities {
+  /* Gradient Text */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  /* Glassmorphism Effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+  }
+}
+
+/* Animation für AOS (Scroll-Effekte) */
+[data-aos] {
+  transition-property: transform, opacity;
+}
+
+/* Reduced Motion für Barrierefreiheit */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
