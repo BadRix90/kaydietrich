@@ -1,0 +1,12 @@
+# robots.txt für kaydietrich.de
+# Steuert, welche Seiten von Suchmaschinen gecrawlt werden dürfen
+
+# Alle Bots erlaubt
+User-agent: *
+Allow: /
+
+# API-Endpunkte nicht indexieren
+Disallow: /src/api/
+
+# Sitemap für Suchmaschinen
+Sitemap: https://kaydietrich.de/sitemap.xml
